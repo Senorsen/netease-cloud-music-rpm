@@ -23,7 +23,7 @@ echo $RPM_BUILD
 
 
 %install
-fakeroot cp -rv usr $RPM_BUILD_ROOT/usr
+cp -rv usr $RPM_BUILD_ROOT/usr
 ln -svf ../lib/netease-cloud-music/netease-cloud/music $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 
 
