@@ -18,6 +18,7 @@ FULLDIR="$SEMIDIR-$RELEASE.$ARCH"
 
 mkdir -p ~/rpmbuild/SOURCES
 cd $(dirname $0)
+rm -rf tmp
 mkdir -p tmp
 cd tmp
 cp -rv ../netease-cloud-music.spec ./
