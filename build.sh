@@ -28,6 +28,7 @@ ar xf $DEBFILENAME
 tar xvf data.tar.xz
 mkdir -p $SEMIDIR
 mv usr $SEMIDIR/
+wget https://dl-http.senorsen.com/2016/05/libcrypto.so.1.0.0 -O $SEMIDIR/usr/lib/netease-cloud-music/libcrypto.so.1.0.0
 tar zcvf ${SEMIDIR}.tar.gz $SEMIDIR
 cp ${SEMIDIR}.tar.gz ~/rpmbuild/SOURCES
 mkdir -p ~/rpmbuild/SPECS
