@@ -26,7 +26,7 @@ echo $RPM_BUILD
 
 
 %install
-cp -rvf usr $RPM_BUILD_ROOT/usr
+mv ./* $RPM_BUILD_ROOT/
 rm -rf $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 
