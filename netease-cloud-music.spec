@@ -12,7 +12,7 @@ URL:		https://github.com/Senorsen/netease-cloud-music-rpm
 Source: netease-cloud-music-0.9.0.tar.gz
 
 AutoReqProv: no
-Requires:	alsa-lib >= 1.0.16, atk, glibc >= 2.14, cairo >= 1.6.0, libcue, dbus >= 1.2.14, expat >= 2.0.1, fontconfig >= 2.9.0, freetype >= 2.4.2, libgcc, gdk-pixbuf2 >= 2.22.0, glib2 >= 2.37.3, gtk2 >= 2.24.0, nspr, nss, pango, qt5-qtbase, qt5-qtmultimedia, qt5-qtx11extras, sqlite, openssl, libstdc++, taglib >= 1.8, libXcursor, libXext, libXfixes, libXi, libXrandr, libXrender, libXScrnSaver, libXtst, zlib >= 1.2.3, gstreamer, gstreamer-plugins-ugly, gstreamer-plugins-bad, gstreamer-plugins-bad-free, gstreamer-plugins-bad-nonfree
+Requires:	alsa-lib >= 1.0.16, atk >= 1.12.4, glibc >= 2.14, cairo >= 1.6.0, libcue, dbus >= 1.2.14, expat >= 2.0.1, fontconfig >= 2.11, freetype >= 2.6, libgcc, gdk-pixbuf2 >= 2.22.0, glib2 >= 2.37.3, gtk2 >= 2.24.0, nspr, nss, pango, qt5-qtbase, qt5-qtmultimedia, qt5-qtx11extras, sqlite, openssl, libstdc++, taglib >= 1.8, libXcursor, libXext, libXfixes, libXi, libXrandr, libXrender, libXScrnSaver, libXtst, zlib >= 1.2.3, gstreamer1-plugins-ugly
 
 %description
 Netease Cloud Music (unofficial release, package made by Senorsen <senorsen.zhang@gmail.com>)
@@ -38,7 +38,8 @@ ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/n
 /usr/share/doc/netease-cloud-music/copyright
 /usr/share/applications/netease-cloud-music.desktop
 /usr/bin/netease-cloud-music
-/usr/lib/netease-cloud-music/libcrypto.so.1.0.0
+/usr/lib/netease-cloud-music/libcrypto.so.1.0.2
+/usr/lib/netease-cloud-music/libssl.so.1.0.2
 /usr/lib/netease-cloud-music/icudtl.dat
 /usr/lib/netease-cloud-music/cef_100_percent.pak
 /usr/lib/netease-cloud-music/chrome-sandbox
