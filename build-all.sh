@@ -12,7 +12,7 @@ cd $(dirname $0)
 DEBFILE_64="netease-cloud-music_0.9.0_amd64.deb"
 DEBFILE_32="netease-cloud-music_0.9.0_i386.deb"
 VERSION=0.9.0
-RELEASE=3
+RELEASE=4
 
 ./build.sh $DEBFILE_64 $VERSION $RELEASE x86_64
 ./build.sh $DEBFILE_32 $VERSION $RELEASE i686
