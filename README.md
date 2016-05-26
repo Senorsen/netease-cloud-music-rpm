@@ -4,7 +4,7 @@
 理论上 openSUSE 也能用，但未测试。
 
 ## 安装
-1. 安装 RPM Fusion 源，free 和 nonfree 都需要：http://rpmfusion.org/Configuration (openSUSE 用户：不清楚安装这个源会不会导致一些依赖关系混乱，欢迎反馈)
+1. 安装 RPM Fusion 源 (free) ：http://rpmfusion.org/Configuration (openSUSE 用户：不清楚安装这个源会不会导致一些依赖关系混乱，欢迎反馈)
 2. 终端下执行：
     
     ```
@@ -20,7 +20,7 @@
 安装后会安装我的 rpm repo 源，以供之后随源更新。如果不需要，可以手动删除，或者自己 clone 本仓库后修改打包脚本。
 
 ## 依赖
-Fedora 23+ (低版本未测试), RPMFusion (free, nonfree)
+Fedora 23+ (低版本未测试), RPMFusion (free)
  
 ## Copyright
 网易云音乐是网易公司的注册商标，本repo与网易公司没有任何关系。
