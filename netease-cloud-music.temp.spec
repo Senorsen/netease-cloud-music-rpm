@@ -1,4 +1,5 @@
 %global debug_package %{nil}
+%global __os_install_post /usr/lib/rpm/brp-compress %{nil}
 
 Name:		netease-cloud-music
 Version:	${VERSION}
