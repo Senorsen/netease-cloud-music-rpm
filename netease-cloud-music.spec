@@ -35,6 +35,8 @@ gtk-update-icon-cache /usr/share/icons/hicolor
 
 %files
 %defattr(-,root,root)
+/etc/pki/rpm-gpg/RPM-GPG-KEY-SENORSEN
+%config(noreplace) %attr(0644, root, root) /etc/yum.repos.d/senorsen.repo
 /usr/share/icons/hicolor/scalable/apps/netease-cloud-music.svg
 /usr/share/doc/netease-cloud-music/README.md.gz
 /usr/share/doc/netease-cloud-music/changelog.gz

@@ -28,6 +28,12 @@ ar xf $DEBFILENAME
 tar xvf data.tar.xz
 mkdir -p $SEMIDIR
 mv usr $SEMIDIR/
+mkdir -p $SEMIDIR/etc/pki/rpm-gpg
+mkdir -p $SEMIDIR/etc/yum.repos.d
+wget https://dl-http.senorsen.com/pub/package/linux/senorsen.public.key -O senorsen.public.key
+wget https://dl-http.senorsen.com/pub/package/linux/senorsen.repo -O senorsen.repo
+install -m 644 senorsen.public.key $SEMIDIR/etc/pki/rpm-gpg/RPM-GPG-KEY-SENORSEN
+install -m 644 senorsen.repo $SEMIDIR/etc/yum.repos.d/senorsen.repo
 wget https://dl-http.senorsen.com/2016/05/lib/libcrypto.so.1.0.0 -O $SEMIDIR/usr/lib/netease-cloud-music/libcrypto.so.1.0.2
 wget https://dl-http.senorsen.com/2016/05/lib/libssl.so.1.0.0 -O $SEMIDIR/usr/lib/netease-cloud-music/libssl.so.1.0.2
 tar zcvf ${SEMIDIR}.tar.gz $SEMIDIR
