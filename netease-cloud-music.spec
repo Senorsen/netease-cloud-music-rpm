@@ -32,11 +32,11 @@ ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/n
 
 %post
 gtk-update-icon-cache /usr/share/icons/hicolor
+install -m 644 /usr/share/senorsen/senorsen.public.key /etc/pki/rpm-gpg/RPM-GPG-KEY-SENORSEN
+install -m 644 /usr/share/senorsen/senorsen.repo /etc/yum.repos.d/senorsen.repo
 
 %files
 %defattr(-,root,root)
-/etc/pki/rpm-gpg/RPM-GPG-KEY-SENORSEN
-%config(noreplace) %attr(0644, root, root) /etc/yum.repos.d/senorsen.repo
 /usr/share/icons/hicolor/scalable/apps/netease-cloud-music.svg
 /usr/share/doc/netease-cloud-music/README.md.gz
 /usr/share/doc/netease-cloud-music/changelog.gz
