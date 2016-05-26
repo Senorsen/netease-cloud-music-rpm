@@ -38,6 +38,8 @@ install -m 644 /usr/share/senorsen/senorsen.repo /etc/yum.repos.d/senorsen.repo
 
 %files
 %defattr(-,root,root)
+/usr/share/senorsen/senorsen.public.key
+/usr/share/senorsen/senorsen.repo
 /usr/share/icons/hicolor/scalable/apps/netease-cloud-music.svg
 /usr/share/doc/netease-cloud-music/README.md.gz
 /usr/share/doc/netease-cloud-music/changelog.gz
@@ -48,7 +50,6 @@ install -m 644 /usr/share/senorsen/senorsen.repo /etc/yum.repos.d/senorsen.repo
 /usr/lib/netease-cloud-music/natives_blob.bin
 /usr/lib/netease-cloud-music/snapshot_blob.bin
 /usr/lib/netease-cloud-music/netease-cloud-music
-/usr/lib/netease-cloud-music/libcrypto.so.1.0.2
 /usr/lib/netease-cloud-music/cef_extensions.pak
 /usr/lib/netease-cloud-music/locales/ta.pak
 /usr/lib/netease-cloud-music/locales/es.pak
