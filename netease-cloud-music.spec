@@ -30,6 +30,9 @@ cp -rvf usr $RPM_BUILD_ROOT/usr
 rm -rf $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 
+%post
+gtk-update-icon-cache /usr/share/icons/hicolor
+
 %files
 %defattr(-,root,root)
 /usr/share/icons/hicolor/scalable/apps/netease-cloud-music.svg
@@ -100,7 +103,6 @@ ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/n
 /usr/lib/netease-cloud-music/icudtl.dat
 /usr/lib/netease-cloud-music/libcef.so
 /usr/lib/netease-cloud-music/chrome-sandbox
-/usr/lib/netease-cloud-music/libssl.so.1.0.2
 /usr/lib/netease-cloud-music/cef_200_percent.pak
 /usr/bin/netease-cloud-music
 /usr/lib/netease-cloud-music/libcrypto.so.1.0.2
