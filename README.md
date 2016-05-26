@@ -6,7 +6,7 @@
 2. 终端下执行：
     
     ```
-    sudo dnf install http://dl-http.senorsen.com/pub/package/linux/rpm/netease-cloud-music-0.9.0-1.x86_64.rpm
+    sudo dnf install http://dl-http.senorsen.com/pub/package/linux/rpm/senorsen-repo-0.0.1-1.noarch.rpm
     # 上一步成功后
     sudo dnf install netease-cloud-music
     ```
