@@ -1,2 +1,3 @@
-tmp/
-control
+tmp-x86_64/
+tmp-i686/
+dist/

@@ -1,18 +1,54 @@
 %global debug_package %{nil}
 
 Name:		netease-cloud-music
-Version:	0.9.0
-Release:	2
+Version:	${VERSION}
+Release:	${RELEASE}
 Summary:	Netease Cloud Music (unofficial release, package made by Senorsen)
 
 Group:		Sound and Video
 License:	Proprietary
 URL:		https://github.com/Senorsen/netease-cloud-music-rpm
 
-Source: netease-cloud-music-0.9.0.tar.gz
+Source:	   ${SOURCE}
 
-AutoReqProv: no
-Requires:	alsa-lib >= 1.0.16, atk >= 1.12.4, glibc >= 2.14, cairo >= 1.6.0, libcue, dbus >= 1.2.14, expat >= 2.0.1, fontconfig >= 2.11, freetype >= 2.6, libgcc, gdk-pixbuf2 >= 2.22.0, glib2 >= 2.37.3, gtk2 >= 2.24.0, nspr, nss, pango, qt5-qtbase, qt5-qtmultimedia, qt5-qtx11extras, sqlite, openssl, libstdc++, taglib >= 1.8, libXcursor, libXext, libXfixes, libXi, libXrandr, libXrender, libXScrnSaver, libXtst, zlib >= 1.2.3, gstreamer1-plugins-ugly
+AutoReqProv:	no
+
+Provides:	netease-cloud-music = ${VERSION}-${RELEASE}
+Provides:	application(netease-cloud-music.desktop)
+
+Requires:	alsa-lib%{?_isa} >= 1.0.16
+Requires:	atk%{?_isa} >= 1.12.4
+Requires:	glibc%{?_isa} >= 2.14
+Requires:	cairo%{?_isa} >= 1.6.0
+Requires:	libcue%{?_isa}
+Requires:	dbus%{?_isa} >= 1.2.14
+Requires:	expat%{?_isa} >= 2.0.1
+Requires:	fontconfig%{?_isa} >= 2.11
+Requires:	freetype%{?_isa} >= 2.6
+Requires:	libgcc%{?_isa}
+Requires:	gdk-pixbuf2%{?_isa} >= 2.22.0
+Requires:	glib2%{?_isa} >= 2.37.3
+Requires:	gtk2%{?_isa} >= 2.24.0
+Requires:	nspr%{?_isa}
+Requires:	nss%{?_isa}
+Requires:	pango%{?_isa}
+Requires:	qt5-qtbase%{?_isa}
+Requires:	qt5-qtmultimedia%{?_isa}
+Requires:	qt5-qtx11extras%{?_isa}
+Requires:	sqlite%{?_isa}
+Requires:	libstdc++%{?_isa}
+Requires:	taglib%{?_isa} >= 1.8
+Requires:	libXcursor%{?_isa}
+Requires:	libXext%{?_isa}
+Requires:	libXfixes%{?_isa}
+Requires:	libXi%{?_isa}
+Requires:	libXrandr%{?_isa}
+Requires:	libXrender%{?_isa}
+Requires:	libXScrnSaver%{?_isa}
+Requires:	libXtst%{?_isa}
+Requires:	zlib%{?_isa} >= 1.2.3
+Requires:	gstreamer1-plugins-ugly%{?_isa}
+
 
 %description
 Netease Cloud Music (unofficial release, package made by Senorsen <senorsen.zhang@gmail.com>)
@@ -29,8 +65,6 @@ echo $RPM_BUILD
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT
 mv ./* $RPM_BUILD_ROOT/
-rm -rf $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
-ln -svf ../lib/netease-cloud-music/netease-cloud-music $RPM_BUILD_ROOT/usr/bin/netease-cloud-music
 
 %post
 gtk-update-icon-cache /usr/share/icons/hicolor
@@ -109,14 +143,15 @@ install -m 644 /usr/share/senorsen/senorsen.repo /etc/yum.repos.d/senorsen.repo
 /usr/lib/netease-cloud-music/libcef.so
 /usr/lib/netease-cloud-music/chrome-sandbox
 /usr/lib/netease-cloud-music/cef_200_percent.pak
-/usr/bin/netease-cloud-music
 /usr/lib/netease-cloud-music/libcrypto.so.1.0.2
-/usr/lib/netease-cloud-music/libssl.so.1.0.2
+/usr/bin/netease-cloud-music
 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Thu May 26 2016 Senorsen <senorsen.zhang@gmail.com> - 0.9.0-3
+- Fix memory leak (according to issue #1, Xu Shaohua's fix)
 * Wed May 25 2016 Senorsen <senorsen.zhang@gmail.com> - 0.9.0-1
 - First rpm package! :-)
