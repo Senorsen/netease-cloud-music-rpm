@@ -4,7 +4,7 @@
 理论上 openSUSE 也能用，但未测试。
 
 ## 安装
-1. 安装 RPM Fusion 源，free 和 nonfree 都需要：http://rpmfusion.org/Configuration
+1. 安装 RPM Fusion 源，free 和 nonfree 都需要：http://rpmfusion.org/Configuration (openSUSE 用户：不清楚安装这个源会不会导致一些依赖关系混乱，欢迎反馈)
 2. 终端下执行：
     
     ```
