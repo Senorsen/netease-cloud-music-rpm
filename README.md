@@ -8,6 +8,7 @@
 sudo dnf install http://dl-http.senorsen.com/pub/package/linux/rpm/netease-cloud-music-0.9.0-1.x86_64.rpm
 ```
 注意：该命令会下载一个30+MB的rpm，所以可能比较缓慢。
+
 3. 在 Dash 中搜索 netease，即可看到网易云音乐的图标（与其他 Ubuntu、Debian 系统安装后使用方法无异）。
 
 重要提醒：
