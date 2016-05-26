@@ -34,7 +34,6 @@ ar xf $DEBFILENAME
 tar xvf data.tar.xz
 mkdir -p $SEMIDIR
 mv usr $SEMIDIR/
-upx $SEMIDIR/usr/lib/netease-cloud-music/netease-cloud-music
 mkdir -p $SEMIDIR/usr/bin
 rm -rf $SEMIDIR/usr/bin/netease-cloud-music
 install -m 755 ../misc/netease-cloud-music $SEMIDIR/usr/bin/netease-cloud-music
