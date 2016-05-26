@@ -1,6 +1,8 @@
 # 网易云音乐 rpm包
 当前状态：Fedora 23 下安装后可以正常打开，测试中播放音乐等功能均可用。
 
+理论上 openSUSE 也能用，但未测试。
+
 ## 安装
 1. 安装 RPM Fusion 源，free 和 nonfree 都需要：http://rpmfusion.org/Configuration
 2. 终端下执行：
