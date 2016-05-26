@@ -10,7 +10,7 @@ set -x
 DEBURL="http://s1.music.126.net/download/pc/netease-cloud-music_0.9.0_amd64.deb"
 DEBFILENAME="netease-cloud-music_0.9.0_amd64.deb"
 VERSION=0.9.0
-RELEASE=1
+RELEASE=2
 ARCH="x86_64"
 NAME="netease-cloud-music"
 SEMIDIR="$NAME-$VERSION"

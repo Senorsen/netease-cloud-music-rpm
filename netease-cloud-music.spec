@@ -2,7 +2,7 @@
 
 Name:		netease-cloud-music
 Version:	0.9.0
-Release:	1
+Release:	2
 Summary:	Netease Cloud Music (unofficial release, package made by Senorsen)
 
 Group:		Sound and Video
