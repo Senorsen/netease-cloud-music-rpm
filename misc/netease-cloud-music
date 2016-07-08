@@ -1,4 +1,5 @@
 #!/bin/sh
 
+export LD_LIBRARY_PATH="/usr/lib/netease-cloud-music:$LD_LIBRARY_PATH"
 cd /usr/lib/netease-cloud-music
 /usr/lib/netease-cloud-music/netease-cloud-music $*

@@ -77,7 +77,7 @@ install -m 644 /usr/share/senorsen/senorsen.repo /etc/yum.repos.d/senorsen.repo
 /usr/share/senorsen/senorsen.public.key
 /usr/share/senorsen/senorsen.repo
 /usr/share/icons/hicolor/scalable/apps/netease-cloud-music.svg
-/usr/share/doc/netease-cloud-music/README.md.gz
+/usr/share/doc/netease-cloud-music/README.md
 /usr/share/doc/netease-cloud-music/changelog.gz
 /usr/share/doc/netease-cloud-music/copyright
 /usr/share/applications/netease-cloud-music.desktop
