@@ -8,6 +8,7 @@
 2. 终端下执行：
     
     ```
+    wget https://dl.senorsen.com/pub/package/linux/add_repo.sh -qO - | sudo sh
     sudo dnf install http://dl-http.senorsen.com/pub/package/linux/rpm/senorsen-repo-0.0.1-1.noarch.rpm
     # 上一步成功后
     sudo dnf install netease-cloud-music
