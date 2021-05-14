@@ -1,3 +1,7 @@
+## Deprecated
+目前我几乎不再使用 Fedora Linux ，精力有限，不再维护本项目。 https://copr.fedorainfracloud.org 有维护者提供较新版本。
+
+
 # 网易云音乐 RPM 包
 当前状态：Fedora 23/24 下安装后可以正常打开使用。
 
